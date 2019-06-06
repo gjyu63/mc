@@ -13,7 +13,7 @@ def run(root):
 
         # the leaf
         # by convention a leaf category contains a map with one key. the probability of that key is whatever
-        if len(prob_map.keys()) == 1:
+        if len(prob_map.keys()) <= 1:
             return prob_map
 
         # check if that classifier is confused or not
